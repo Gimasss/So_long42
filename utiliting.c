@@ -6,17 +6,16 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 13:55:32 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/22 17:37:36 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/23 16:11:13 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <so_long.h>
 #include <bits/fcntl-linux.h>
 
-
 void	ft_print_matrix(char **map_mat)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (map_mat[i] != NULL)
@@ -25,9 +24,10 @@ void	ft_print_matrix(char **map_mat)
 		i++;
 	}
 }
+
 int	ft_matlen(char **map_mat)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (map_mat[i] != NULL)
@@ -39,8 +39,8 @@ int	ft_matlen(char **map_mat)
 
 char	**mat_copy(char **mat, int rows)
 {
-	char **res;
-	int i;
+	char	**res;
+	int		i;
 
 	res = ft_calloc(rows + 1, sizeof(char *));
 	if (!res)

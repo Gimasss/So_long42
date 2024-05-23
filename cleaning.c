@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:25:01 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/22 18:14:27 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/23 15:29:36 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ez_exit(t_mlx_win *win)
 
 void	ft_free_matrix(char **map_mat)//CLEAN FILE
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (map_mat[i] != NULL)
@@ -31,13 +31,13 @@ void	ft_free_matrix(char **map_mat)//CLEAN FILE
 	free(map_mat);
 }
 
-int		ft_exit(t_mlx_win  *window, char *str, int flag)//CLEAN FTS
+int	ft_exit(t_mlx_win *window, char *str, int flag)
 {
 	if (str)
-		ft_putstr_fd(str, 2); //scrive sempre sul fd err
-	ft_putstr_fd("bye", 2); //scrive sempre sul fd err
+		ft_putstr_fd(str, 2);
+	ft_putstr_fd("bye", 2);
 	free_exit(window, flag);
-	exit(flag); //esce con codice che dici te
+	exit(flag);
 }
 
 void	free_sprites(t_mlx_win *window)
@@ -58,9 +58,9 @@ void	free_sprites(t_mlx_win *window)
 		mlx_destroy_image(window->mlx, window->spr.exit_2);
 }
 
-int free_exit(t_mlx_win *window, int flag)//CLEAN FTS
+int	free_exit(t_mlx_win *window, int flag)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	ft_free_matrix(window->map.map_mat);
@@ -71,6 +71,6 @@ int free_exit(t_mlx_win *window, int flag)//CLEAN FTS
 		mlx_destroy_display(window->mlx);
 		free(window->mlx);
 	}
-	ft_putstr_fd("bye", 1); //scrive sempre sul fd err
+	ft_putstr_fd("bye", 1);
 	exit(flag);
 }
