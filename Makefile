@@ -6,7 +6,7 @@
 #    By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/04 14:43:45 by gmastroc          #+#    #+#              #
-#    Updated: 2024/05/23 15:41:29 by gmastroc         ###   ########.fr        #
+#    Updated: 2024/05/25 17:32:54 by gmastroc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,8 @@ INC 		= -I./libft/includes -I./mlx -I.
 LIBFTPATH 	= ./libft
 MLXPATH 	= ./mlx
 MLX_FLAGS 	= -Lmlx -lmlx -lXext -lX11 -lm
-SRC 		= main.c checking.c cleaning.c parsing.c \
-			rendering.c utiliting.c moving.c
+SRC 		= src/main.c src/checking.c src/cleaning.c src/parsing.c \
+			src/rendering.c src/utiliting.c src/moving.c
 
 all: $(NAME)
 

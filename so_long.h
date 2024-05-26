@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 17:20:24 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/22 20:08:15 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/25 19:33:20 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,7 @@
 # define IMG_WIDTH 40
 # define IMG_HEIGHT 40
 
-
-
+//STRUCTURES
 
 typedef struct s_coord
 {
@@ -62,9 +61,9 @@ typedef struct s_sprites
 typedef struct s_mappa
 {
 	char	**map_mat;
-	int		collectible; // numero collezionabili
-	int		prcdio;//DA CAMBIARE IN FF_COLL
-	int 	prcmdnna;//DA CAMBIARE FF_EXIT >:(
+	int		collectible;
+	int		ff_collect;
+	int 	ff_exit;
 	t_coord	size;
 	t_coord exit;
 	t_coord player;
