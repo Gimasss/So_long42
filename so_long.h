@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 17:20:24 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/25 19:33:20 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/26 17:39:20 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,15 @@
 # define ENEMY 'N'
 # define EXIT 'E'
 
-
 # define IMG_WIDTH 40
 # define IMG_HEIGHT 40
 
 //STRUCTURES
-
 typedef struct s_coord
 {
-		int x;//col
-		int y;//row
-}
-	t_coord;
-
+	int	x;//col
+	int	y;//row
+}	t_coord;
 
 typedef struct s_sprites
 {
@@ -55,34 +51,31 @@ typedef struct s_sprites
 	void	*exit;
 	void	*exit_2;
 	void	*enemy;
-}
-	t_sprites;	
+}	t_sprites;	
 
 typedef struct s_mappa
 {
 	char	**map_mat;
 	int		collectible;
 	int		ff_collect;
-	int 	ff_exit;
+	int		ff_exit;
 	t_coord	size;
-	t_coord exit;
-	t_coord player;
-}
-	t_mappa;
+	t_coord	exit;
+	t_coord	player;
+}	t_mappa;
 
 //principale
 typedef struct s_mlx_win
 {
-	void	*mlx;
-	void	*mlx_win;
-	void	*window;
-	t_sprites spr;
-	t_coord	size;
-	t_mappa map;
+	void		*mlx;
+	void		*mlx_win;
+	void		*window;
+	t_sprites	spr;
+	t_coord		size;
+	t_mappa		map;
 
 	uint64_t	moves;
-}
-	t_mlx_win;
+}	t_mlx_win;
 
 //clean file
 void	ft_free_matrix(char **map_mat);
@@ -105,7 +98,6 @@ char	**get_map_matrix(char *map, int fd);
 int		basic_check(char *str);
 void	map_checks(t_mlx_win *window, int rows, int cols);
 
-
 //parsing file
 int		check_if_dir(t_mlx_win *window, int argc, char *argv[]);
 int		check_lines(int rows, int cols, char **map_mat);
@@ -121,6 +113,5 @@ int		render_and_place(t_mlx_win *window);
 //movement
 int		key_event(int key, t_mlx_win *window);
 int		strolling_around(t_mlx_win *window, t_coord pos);
-
 
 #endif

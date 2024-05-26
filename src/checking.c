@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 13:56:39 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/25 17:35:06 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/26 17:32:17 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,10 @@ void	map_checks(t_mlx_win *window, int rows, int cols)
 	if (window->map.collectible <= 0)
 		ft_exit(window, "Error - Where is the DATA?\n", 13);
 	if (count_elements(rows, cols, window->map.map_mat, 'E') != 1)
-		ft_exit(window, "Error - Cannot escape, \
-		cannot come out...MAMAAA\n", 13);
+		ft_exit(window,
+			"Error - Cannot escape, cannot come out...MAMAAA\n", 13);
 	if (check_walls(window->map.map_mat, rows, cols) == 0)
 		ft_exit(window, "Error - Breach in the walls\n", 13);
 	if (!ff_check(window))
-		ft_exit(window, "Error - OVERFLOODfill", 13);
+		ft_exit(window, "Error - (FF) What were you thinking?", 13);
 }

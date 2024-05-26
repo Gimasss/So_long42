@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:25:01 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/26 15:59:40 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/26 17:32:08 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ int	ft_exit(t_mlx_win *window, char *str, int flag)
 {
 	if (str)
 		ft_putstr_fd(str, 2);
-	ft_putstr_fd("bye", 2);
-	if (window)//modified
+	ft_putstr_fd("Bye", 2);
+	if (window)
 		free_exit(window, flag);
 	exit(flag);
 }
@@ -63,9 +63,6 @@ void	free_sprites(t_mlx_win *window)
 
 int	free_exit(t_mlx_win *window, int flag)
 {
-	int	i;
-
-	i = 0;
 	ft_free_matrix(window->map.map_mat);
 	free_sprites(window);
 	if (window->mlx)
@@ -74,6 +71,6 @@ int	free_exit(t_mlx_win *window, int flag)
 		mlx_destroy_display(window->mlx);
 		free(window->mlx);
 	}
-	ft_putstr_fd("bye", 1);
+	ft_putstr_fd("Bye", 1);
 	exit(flag);
 }

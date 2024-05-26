@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:18:08 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/23 15:58:05 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/26 16:51:11 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	init_sprites(t_mlx_win *game)
 	x = IMG_WIDTH;
 	y = IMG_HEIGHT;
 	game->spr.wall = convert_image(game, "./images/palm.xpm", x, y);
-	game->spr.floor = convert_image(game, "./images/floor1.xpm", x, y);
+	game->spr.floor = convert_image(game, "./images/floor.xpm", x, y);
 	game->spr.player = convert_image(game, "./images/dolphin.xpm", x, y);
 	game->spr.collectible = convert_image(game,
 			"./images/collectible.xpm", x, y);

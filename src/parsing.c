@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 14:05:30 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/05/23 15:54:30 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/26 17:25:40 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,14 @@ int	check_lines(int rows, int cols, char **map_mat)//2
 	i = 0;
 	if (rows <= 3 || cols <= 3)
 	{
-		return (ft_printf("Map too small, wrong vibes\n", 2), 0);
+		return (ft_printf("WAY too small\n", 2), 0);
 	}
 	while (i < rows)
 	{
 		row_len = ft_strlen(map_mat[i]);
 		if (cols != row_len)
 		{
-			return (ft_printf("different lines, wrong vibes\n", 2), 0);
+			return (ft_printf("The lines, dude\n", 2), 0);
 		}
 		i++;
 	}
