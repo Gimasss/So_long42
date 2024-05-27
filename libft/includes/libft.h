@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 20:10:07 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/04/25 15:51:19 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/27 13:47:40 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@
 // char	*ft_defined_line(char *selection);
 // char	*ft_read(int fd, char *selection);
 // char	*get_next_line(int fd);
-
 
 //		projects
 int		ft_printf(const char *format, ...);
@@ -118,6 +117,5 @@ int		ft_putendl_fd(char *s, int fd);
 int		ft_putnbr_fd(int n, int fd);
 int		ft_putnbr_base(unsigned long n, char *base);
 int		ft_putptr(uintptr_t ptr);
-
 
 #endif

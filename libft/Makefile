@@ -6,13 +6,13 @@
 #    By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/15 17:27:18 by gmastroc          #+#    #+#              #
-#    Updated: 2024/04/25 15:30:49 by gmastroc         ###   ########.fr        #
+#    Updated: 2024/05/26 17:09:12 by gmastroc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # VARIABLES #
 NAME	=	libft.a
-CC		= 	gcc
+CC		= 	cc
 CFLAGS	=	-Wall -Wextra -Werror
 LIBCMP	=	ar -rcs
 INC		=	-I./includes

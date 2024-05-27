@@ -6,13 +6,12 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 17:01:01 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/04/24 18:46:08 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/27 13:46:15 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include "includes/libft.h"
-
 
 char	*ft_leftover_file(char *selection, char *line)
 {

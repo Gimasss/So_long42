@@ -6,7 +6,7 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/14 14:29:01 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/04/07 17:49:13 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/27 13:47:07 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int	ft_putnbr_fd(int n, int fd)
 	res = res + ft_putchar_fd(((nl % 10) + '0'), fd);
 	return (res);
 }
-
 
 // #include <fcntl.h>
 

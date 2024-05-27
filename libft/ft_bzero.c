@@ -6,12 +6,11 @@
 /*   By: gmastroc <gmastroc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 15:20:01 by gmastroc          #+#    #+#             */
-/*   Updated: 2024/04/07 17:47:11 by gmastroc         ###   ########.fr       */
+/*   Updated: 2024/05/27 13:46:58 by gmastroc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	*ft_bzero(void *s, size_t n)
 {
